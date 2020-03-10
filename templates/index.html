@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Happy+Monkey|Patrick+Hand+SC&display=swap|Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}">
+    <title>Comic Mate</title>
+</head>
+<body>
+  
+  <div class="whole-container">
+    <!-- <header class="main panel dkblue">
+      <div class="inner">
+        <h1 class="big">Big Header 1</h1>
+        <div class="right">
+        </div>
+      </div>
+    </header> -->
+    {% for i in range(0, artists|length, 2) %}
+      <section class="comic panel {{colours[(i//2)%6]}}">
+        <a href="/{{artists[i].slug}}">
+          <div class="double triple inner">
+            <div class="two-thirds left" id="">
+            <div class="comic-pane {{colours[(i//2)%6]}}">
+              <div class="text">
+                <div class="holder">
+                  <h2 class="yellow">{{artists[i].title}}</h2>
+                  <p>By {{artists[i].name}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </a>
+        {% if i+1!=artists|length %}
+        <a href="/{{artists[i+1].slug}}">
+          <div class="double triple inner">
+            <div class="two-thirds left" id="">
+            <div class="comic-pane {{colours[(i//2)%6]}}">
+              <div class="text">
+                <div class="holder">
+                  <h2 class="yellow">{{artists[i+1].title}}</h2>
+                  <p>By {{artists[i+1].name}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </a>
+        {% endif %}
+      </section>
+    {% endfor %}
+    <section class="comic panel" >
+      <h2 class="black" style="text-align: center;">Made with <i class="fas fa-heart heart" style="color: red;"></i> by <a href="https://www.kjscecodecell.com/">CodeCell</a></h2>
+    </section>
+  </div>
+</body>
+</html>

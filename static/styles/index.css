@@ -1,0 +1,293 @@
+/*===========================
+START // General Page/Layout
+============================*/
+/* @import url(//fonts.googleapis.com/css?family=Patrick+Hand+SC|Bangers|Happy+Monkey); */
+/* LAYOUT */
+.whole-container {
+  width: 100%;
+  height: auto;
+}
+
+body{
+  margin:0;
+}
+
+section{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #222;
+}
+
+.inner {
+  max-width: 1003px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.double,
+.triple,
+.double.triple {
+  max-width: 1003px;
+  display: block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.half {
+  width: 50%;
+}
+
+.third {
+  width: 33.33%;
+}
+
+.two-thirds {
+  width: 66.66%;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", sans-serif;
+  color: #222;
+}
+
+p,
+ul,
+li,
+ol {
+  font-family: 'Bangers', cursive;
+  color: #222;
+}
+
+.blue {
+  color: #51cbf1;
+}
+
+.dkblue {
+  color: #038ecf;
+}
+
+.yellow {
+  color: #ffce55;
+}
+
+.orange {
+  color: #fa9939;
+}
+
+.pink {
+  color: #f03485;
+}
+
+.green {
+  color: #9dc705;
+}
+
+.red {
+  color: #f3655d;
+}
+
+/*===========================
+END // General Page/Layout
+============================*/
+/*===========================
+START // Comic (Dot) Panels
+Original by @ashandrien | Comic Book Half Tone Background | https://codepen.io/ashandrien/pen/rnzsd
+============================*/
+.panel {
+  padding: 1em;
+  background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
+  border-top: 3px solid #444;
+  margin-bottom: -4px;
+}
+.panel.red {
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%);
+}
+.panel.blue {
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #038ecf 0, #51cbf1 30%, #7ff9ff 50%, #51cbf1 70%, #038ecf 100%);
+}
+.panel.grey {
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #484848 0, #959595 30%, #acacac 50%, #959595 70%, #484848 100%);
+}
+.panel.ltgrey {
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #acacac 0, #dadada 30%, #f2f2f2 50%, #dadada 70%, #acacac 100%);
+}
+.panel.yellow {
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #ffce55 0, #fffc83 30%, #ffffb1 50%, #fffc83 70%, #ffce55 100%);
+}
+.panel.orange {
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #fa9939 0, #ffc767 30%, #fff595 50%, #ffc767 70%, #fa9939 100%);
+}
+.panel.pink {
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #f03485 0, #ff62b3 30%, #ff90e1 50%, #ff62b3 70%, #f03485 100%);
+}
+.panel.green {
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #9dc705 0, #cbf533 30%, #f9ff61 50%, #cbf533 70%, #9dc705 100%);
+}
+
+/*===========================
+END // Comic (Dot) Panels
+============================*/
+/*===========================
+START // Big & "Fancy" Headlines
+Original by @sudocoda | Transparent Action Onomatopoeia | https://codepen.io/sudocoda/pen/xkLie
+============================*/
+.big {
+  font-family: "Bangers";
+  margin: 0 0 -1em 0;
+  text-shadow: -1px -1px yellow, 1px 1px orange,  2px 2px orange;
+  -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+  transform: rotate(-10deg) skew(-10deg, 0);
+  padding-bottom: 50px;
+  float: left;
+  width: 100%;
+}
+
+h1.big {
+  font-size: 150px;
+  margin-bottom: -.75em;
+}
+
+h2.big {
+  font-size: 110px;
+}
+
+h3.big {
+  font-size: 80px;
+}
+
+h4.big {
+  font-size: 60px;
+  margin-top: -.15em;
+}
+
+
+/*===========================
+END // Big & "Fancy" Headlines
+============================*/
+/*===========================
+START // Comic (Content) Panes
+Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/pen/sDibB
+============================*/
+/* BASE PANE PIECES */
+
+.comic .triple.double .comic-pane {
+  width: 98%;
+  max-width: 943px;
+  height: auto;
+  min-height: 200px;
+  top: .5em;
+  left: 1.5em;
+  position: relative;
+  margin: 0 1%;
+  overflow: hidden;
+}
+
+.comic .triple.double .comic-pane .text {
+  width: 80%;
+  height: 90.5%;
+  position: absolute;
+  left: 1em;
+  -webkit-transform: skew(-15deg);
+          transform: skew(-15deg);
+  background: white;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-right: 3px solid;
+}
+
+.comic .triple.double .comic-pane .text::before {
+  content: "";
+  dislay: block;
+  position: absolute;
+  height: 100%;
+  width: 4em;
+  left: -2em;
+  -webkit-transform: skew(15deg);
+          transform: skew(15deg);
+  background: white;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-backface-visibility: hidden;
+}
+
+.comic .triple.double .comic-pane .text .holder {
+  width: 85%;
+  margin-top: 1.5em;
+  margin-left: 2em;
+  -webkit-transform: skew(15deg);
+          transform: skew(15deg);
+}
+
+.comic .triple.double .comic-pane .text h2 {
+  font-size: 2em;
+  margin-bottom: 0;
+  text-shadow: -1px -1px black, 1px 1px black,  2px 2px black;
+  font-weight: 400;
+}
+
+/* DIFFERENT LAYOUT OPTIONS (# of items/row) */
+
+.comic .triple.double {
+  max-width: 963px;
+  width: 96%;
+}
+.comic .triple.double .two-thirds {
+  width: 50%;
+}
+.comic .triple.double .two-thirds .comic-pane .text h2 {
+  margin-top: 0.25em;
+}
+.comic .triple.double .two-thirds .comic-pane .text p {
+  font-size: 1.5em;
+}
+
+/*===========================
+END // Comic (Content) Panes
+============================*/
+/* JUST FOR GUIDANCE */
+.inner-container {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  width: 1003px;
+  border: 1px dashed red;
+  height: 6200px;
+}
+
+header.main {
+  margin: 0;
+  width: 100%;
+  display: block;
+  min-height: 250px;
+  border-top: none;
+}
+header.main h1.big {
+  width: auto;
+  line-height: .75em;
+  margin-top: .5em;
+}
+
+@media screen and (max-width:600px) {
+  .left {
+    width: 100% !important;
+       float: unset;
+    }
+
+    .right{
+      width: 100% !important;
+      float: unset;
+    }
+}
